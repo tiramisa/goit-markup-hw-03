@@ -17,6 +17,12 @@ body {
 }
 
 /* header */
+.container{
+    width: 1158px;
+}
+.border-bottom{
+    border-bottom: 1px solid var(--cornflower-color);
+}
 .logo {
     font-family: 'Raleway';
     font-weight: 800;
@@ -25,6 +31,10 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color);
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0;
 }
 
 .studio {
@@ -93,6 +103,10 @@ body {
 
 .links {
     color: var(--slate-color);
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section-title {
@@ -171,7 +185,8 @@ body {
     color: var(--cloud-color);
 }
 
-.footer-background {
+.footer-background {    
+    height: 312px;
     background-color: var(--navy-blue-color);
 }
 
