@@ -9,12 +9,6 @@
     --ocean-color: #404BBF;
 }
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Roboto", "Raleway";
     background-color: var(--white-color);
@@ -22,9 +16,17 @@ body {
     font-size: 16px;
 }
 
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
 ul,
 ol {
-    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -32,27 +34,62 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 img {
     display: block;
 }
 
+.navigation,
+.logo-row,
+.address-link {
+    padding-top: 25.5px;
+}
+
 /* header */
+.container-row {
+    flex-direction: row;
+    display: flex;
+}
+
 .container {
     width: 1158px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .page-header {
     border-bottom: 1px solid var(--cornflower-color);
 }
 
+.main-page {
+    padding-top: 120px;
+}
+
+.card-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .card {
-    border-bottom: 1px solid #e7e9fc;
+    width: 360px;
+    height: 120px;
+    border-right: 1px solid var(--cornflower-color);
+    border-left: 1px solid var(--cornflower-color);
+    border-bottom: 1px solid var(--cornflower-color);
+}
+
+.card-studio {
+    width: 264px;
+    border-right: 1px solid var(--cornflower-color);
+    border-left: 1px solid var(--cornflower-color);
+    border-bottom: 1px solid var(--cornflower-color);
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 .logo {
@@ -63,10 +100,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
 }
 
 .studio {
@@ -100,6 +133,12 @@ img {
 .header-link,
 .logo {
     text-decoration: none;
+
+}
+
+.logo-row {
+    padding-right: 76px;
+    padding-bottom: 25.5px;
 }
 
 .hero-title {
@@ -108,11 +147,19 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-color);
+    padding-top: 188px;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: 48px;
+
 }
 
 .hero-image {
+    width: auto;
+    height: 600px;
     color: var(--white-color);
     background-color: var(--navy-blue-color);
+    padding-bottom: 188px;
 }
 
 .text-button {
@@ -122,24 +169,20 @@ img {
     font-weight: 500;
     line-height: 1.5;
     display: block;
-    align-items: center;
-    letter-spacing: 0.04em;
     flex-direction: row;
     align-items: flex-start;
     font-family: inherit;
-    padding: 16px 32px;
+    padding: 16px 32px 16px 32px;
     gap: 10px;
-    margin: 0 auto;
     cursor: pointer;
+}
+
+.button {
+    margin: auto;
 }
 
 .links {
     color: var(--slate-color);
-}
-
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .section-title {
@@ -148,6 +191,7 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .our-team {
@@ -156,10 +200,25 @@ img {
 
 .items {
     list-style-type: none;
+    margin-right: 40px;
+}
+
+.items:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.items-section {
+    list-style-type: none;
+    margin-right: 24px;
+}
+
+.items-section:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .address-link {
     text-decoration: none;
+    margin-left: auto;
 }
 
 .contacts {
@@ -191,6 +250,15 @@ img {
     cursor: pointer;
 }
 
+.btn {
+    text-align: center;
+}
+
+.item-btn {
+    display: flex;
+    flex-direction: row;
+}
+
 .item-btn .btn:hover,
 .item-btn .btn:focus {
     color: var(--white-color);
@@ -204,6 +272,11 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: inherit;
+    margin-bottom: 8px;
+}
+
+.card-img {
+    margin-bottom: 32px;
 }
 
 .text-content {
@@ -220,17 +293,20 @@ img {
 
 .footer-background {
     background-color: var(--navy-blue-color);
-    width: 1440px;
+    width: auto;
 }
 
 .footer-text {
-    margin-top: 17.5px;
     color: var(--cloud-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
+.footer-logo {
+    margin-bottom: 17.5px;
+}
+
 .footer-container {
-    padding-top: 101.5px;
-    padding-bottom: 100px;
+    padding-bottom: 101.5px;
+    padding-top: 100px;
 }
