@@ -15,11 +15,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
         <div class="container">
             <div class="container-row">
                 <nav class="nav container-row">
-                    <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
+                    <div class="logo-row">
+                        <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
+                    </div>
                     <ul class="navigation container-row">
                         <li class="items"><a href="./index.html" class="header-link">Studio</a></li>
                         <li class="items"><a href="./portfolio.html" class="header-link">Portfolio</a></li>
@@ -37,92 +39,96 @@
         </div>
     </header>
     <main>
-        <section class="portfolio-section">
-            <div class="container">
-                <section class="section">
-                    <h1 class="visually-hidden">filter-button</h1>
-                    <ul class="item-btn">
+        <section class="section">
+            <div class="container projects-container">
+                <h1 class="visually-hidden">filter-button</h1>
+                <div class="container-buttons">
+                    <ul class="container-row item-btn">
                         <li class="items"> <button type="button" class="btn">All</button></li>
                         <li class="items"> <button type="button" class="btn">Web Site</button></li>
                         <li class="items"> <button type="button" class="btn">App</button></li>
                         <li class="items"> <button type="button" class="btn">Design</button></li>
                         <li class="items"> <button type="button" class="btn">Marketing</button></li>
                     </ul>
+                </div>
 
-                    <ul class="item">
-                        <li class="items"><img src="./images/banking.jpeg" alt="banking" width="360" height="300">
-                            <div class="card">
-                                <h3 class="project-title">Banking App Interface Concept</h3>
-                                <p class="text-content">App</p>
-                            </div>
-                        </li>
+                <ul class="item container-row">
+                    <li class="items"><img src="./images/banking.jpeg" alt="banking" width="360" height="300">
+                        <div class="card">
+                            <h3 class="project-title">Banking App Interface Concept</h3>
+                            <p class="text-content">App</p>
+                        </div>
+                    </li>
 
-                        <li class="items"><img src="./images/payment.jpeg" alt="payment" width="360" height="300">
-                            <div class="card">
-                                <h3 class="project-title">Cashless Payment</h3>
-                                <p class="text-content">Marketing</p>
-                            </div>
-                        </li>
-                        <li class="items"><img src="./images/meditation.jpeg" alt="meditation" width="360" height="300">
-                            <div class="card">
-                                <h3 class="project-title">Meditation App</h3>
-                                <p class="text-content">App</p>
-                            </div>
-                        <li class="items"><img src="./images/taxi.jpeg" alt="Taxi Service" width="360" height="300">
-                            <div class="card">
-                                <h3 class="project-title">Taxi Service</h3>
-                                <p class="text-content">Marketing</p>
-                            </div>
-                        </li>
-                        <li class="items"><img src="./images/screen_design.jpeg" alt="Screen Illustrations" width="360"
-                                height="300">
-                            <div class="card">
-                                <h3 class="project-title">Screen Illustrations</h3>
-                                <p class="text-content">Design</p>
-                            </div>
-                        </li>
-                        <li class="items"><img src="./images/online_courses.jpeg" alt="Online Courses" width="360"
-                                height="300">
-                            <div class="card">
-                                <h3 class="project-title">Online Courses</h3>
-                                <p class="text-content">Marketing</p>
-                            </div>
-                        </li>
-                        <li class="items"><img src="./images/inst_story.jpeg" alt="Instagram Stories Concept"
-                                width="360" height="300">
-                            <div class="card">
-                                <h3 class="project-title">Instagram Stories Concept</h3>
-                                <p class="text-content">Design</p>
-                            </div>
-                        </li>
-                        <li class="items"><img src="./images/screen_design.jpeg" alt="Organic Food" width="360"
-                                height="300">
-                            <div class="card">
-                                <h3 class="project-title">Organic Food</h3>
-                                <p class="text-content">Web Site</p>
-                            </div>
-                        </li>
-                        <li class="items"><img src="./images/fresh_coffee.jpeg" alt="Fresh Coffee" width="360"
-                                height="300">
-                            <div class="card">
-                                <h3 class="project-title">Fresh Coffee</h3>
-                                <p class="text-content">Web Site</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
+                    <li class="items"><img src="./images/payment.jpeg" alt="payment" width="360" height="300">
+                        <div class="card">
+                            <h3 class="project-title">Cashless Payment</h3>
+                            <p class="text-content">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="items"><img src="./images/meditation.jpeg" alt="meditation" width="360" height="300">
+                        <div class="card">
+                            <h3 class="project-title">Meditation App</h3>
+                            <p class="text-content">App</p>
+                        </div>
+                    <li class="items"><img src="./images/taxi.jpeg" alt="Taxi Service" width="360" height="300">
+                        <div class="card">
+                            <h3 class="project-title">Taxi Service</h3>
+                            <p class="text-content">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="items"><img src="./images/screen_design.jpeg" alt="Screen Illustrations" width="360"
+                            height="300">
+                        <div class="card">
+                            <h3 class="project-title">Screen Illustrations</h3>
+                            <p class="text-content">Design</p>
+                        </div>
+                    </li>
+                    <li class="items"><img src="./images/online_courses.jpeg" alt="Online Courses" width="360"
+                            height="300">
+                        <div class="card">
+                            <h3 class="project-title">Online Courses</h3>
+                            <p class="text-content">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="items"><img src="./images/inst_story.jpeg" alt="Instagram Stories Concept" width="360"
+                            height="300">
+                        <div class="card">
+                            <h3 class="project-title">Instagram Stories Concept</h3>
+                            <p class="text-content">Design</p>
+                        </div>
+                    </li>
+                    <li class="items"><img src="./images/screen_design.jpeg" alt="Organic Food" width="360"
+                            height="300">
+                        <div class="card">
+                            <h3 class="project-title">Organic Food</h3>
+                            <p class="text-content">Web Site</p>
+                        </div>
+                    </li>
+                    <li class="items"><img src="./images/fresh_coffee.jpeg" alt="Fresh Coffee" width="360" height="300">
+                        <div class="card">
+                            <h3 class="project-title">Fresh Coffee</h3>
+                            <p class="text-content">Web Site</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        </div>
     </main>
 
     <footer class="footer-background">
         <div class="container">
             <div class="footer-container">
-                <a href="./index.html" class="logo"><span class="web">Web</span><span
-                        class="studio-white">Studio</span></a>
+                <div class="footer-logo">
+
+                    <a href="./index.html" class="logo"><span class="web">Web</span><span
+                            class="studio-white">Studio</span></a>
+                </div>
+
                 <p class="footer-text">Increase the flow of customers and <br> sales for your business with digital <br>
                     marketing & growth solutions.</p>
             </div>
+
         </div>
     </footer>
 </body>

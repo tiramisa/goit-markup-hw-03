@@ -55,11 +55,17 @@ img {
 .container-row {
     flex-direction: row;
     display: flex;
+    justify-content: space-around;
 }
 
 .container {
     width: 1158px;
     margin: auto;
+}
+
+.container-buttons {
+    margin: auto;
+    margin-bottom: 72px;
 }
 
 .page-header {
@@ -77,13 +83,18 @@ img {
 
 .card {
     width: 360px;
-    height: 120px;
+    padding-bottom: 32px;
     border-right: 1px solid var(--cornflower-color);
     border-left: 1px solid var(--cornflower-color);
     border-bottom: 1px solid var(--cornflower-color);
 }
 
-.card-studio {
+.projects-container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.project-list .card-studio {
     width: 264px;
     border-right: 1px solid var(--cornflower-color);
     border-left: 1px solid var(--cornflower-color);
@@ -241,22 +252,28 @@ img {
     overflow: hidden;
 }
 
+.item-btn {
+    place-items: 10px;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+
 .item-btn .btn {
     font-size: 16px;
     line-height: 1.4;
+    padding: 12px 24px;
     font-family: inherit;
     color: var(--iris-color);
     background-color: var(--cornflower-color);
+    border: 1px;
+    border-color: var(--cornflower-color);
+    border-radius: 4px;
     cursor: pointer;
 }
 
 .btn {
     text-align: center;
-}
-
-.item-btn {
-    display: flex;
-    flex-direction: row;
 }
 
 .item-btn .btn:hover,
