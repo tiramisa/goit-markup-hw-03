@@ -94,13 +94,27 @@ img {
     padding-bottom: 120px;
 }
 
-.project-list .card-studio {
+.project-list {
     width: 264px;
     border-right: 1px solid var(--cornflower-color);
     border-left: 1px solid var(--cornflower-color);
     border-bottom: 1px solid var(--cornflower-color);
     text-align: center;
     padding-bottom: 32px;
+}
+
+.card-studio {
+    width: 264px;
+    padding-bottom: 32px;
+    border-right: 1px solid var(--cornflower-color);
+    border-left: 1px solid var(--cornflower-color);
+    border-bottom: 1px solid var(--cornflower-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    background-color: var(--white-color);
 }
 
 .logo {
@@ -257,6 +271,10 @@ img {
     list-style: none;
     align-items: center;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .item-btn .btn {
@@ -292,14 +310,20 @@ img {
     margin-bottom: 8px;
 }
 
-.card-img {
-    margin-bottom: 32px;
-}
 
 .text-content {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
+}
+
+.text-content,
+.project-title {
+    text-align: center;
+}
+
+.img-portfolio {
+    margin-bottom: 32px;
 }
 
 /* footer */
