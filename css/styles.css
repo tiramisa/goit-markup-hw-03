@@ -180,8 +180,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--white-color);
     padding-top: 188px;
-    padding-right: auto;
-    padding-left: auto;
     padding-bottom: 48px;
 
 }
@@ -273,7 +271,6 @@ img {
 }
 
 .item-btn {
-    place-items: 10px;
     list-style: none;
     align-items: center;
     margin: 0;
@@ -304,6 +301,16 @@ img {
 .item-btn .btn:focus {
     color: var(--white-color);
     background-color: var(--ocean-color);
+}
+
+.item {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .feature-title,
