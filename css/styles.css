@@ -59,8 +59,9 @@ img {
 }
 
 .container {
-    width: 1158px;
-    margin: auto;
+    max-width: 1158px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .container-buttons {
@@ -82,7 +83,10 @@ img {
 }
 
 .card {
+
     width: 360px;
+    padding-left: 16px;
+    padding-top: 32px;
     padding-bottom: 32px;
     border-right: 1px solid var(--cornflower-color);
     border-left: 1px solid var(--cornflower-color);
@@ -114,6 +118,9 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
     background-color: var(--white-color);
 }
 
@@ -191,19 +198,18 @@ img {
     font-size: 16px;
     color: var(--white-color);
     background-color: var(--iris-color);
-    font-weight: 500;
-    line-height: 1.5;
-    display: block;
-    flex-direction: row;
-    align-items: flex-start;
-    font-family: inherit;
-    padding: 16px 32px 16px 32px;
-    gap: 10px;
     cursor: pointer;
+    width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+    line-height: 24px;
 }
 
 .button {
-    margin: auto;
+    border: none;
 }
 
 .links {
@@ -311,19 +317,16 @@ img {
 }
 
 
-.text-content {
+.text-content,
+.project-title {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }
 
-.text-content,
-.project-title {
-    text-align: center;
-}
-
 .img-portfolio {
-    margin-bottom: 32px;
+    display: block;
+    max-width: 100%;
 }
 
 /* footer */
