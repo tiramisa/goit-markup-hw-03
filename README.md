@@ -1,3 +1,3 @@
 # goit-markup-hw-3
 
-https://github.com/tiramisa/goit-markup-hw-03
+https://tiramisa.github.io/goit-markup-hw-03/
