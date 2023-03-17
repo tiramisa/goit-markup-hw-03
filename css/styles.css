@@ -16,10 +16,8 @@ body {
     font-size: 16px;
 }
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
+* {
+    outline: 1px solid red;
 }
 
 ul,
@@ -48,25 +46,41 @@ img {
 .navigation,
 .logo-row,
 .address-link {
-    padding-top: 25.5px;
+    text-decoration: none;
+    color: var(--headercolor);
+    font-style: normal;
+    padding: 24px 0 24px 0;
+    padding-top: 24px;
+    padding-right: 0px;
+    padding-bottom: 24px;
+    padding-left: 0px;
+    display: block;
 }
 
 /* header */
 .container-row {
-    flex-direction: row;
     display: flex;
-    justify-content: space-around;
+}
+
+.container-header {
+    flex-direction: row;
 }
 
 .container {
     max-width: 1158px;
     margin: 0 auto;
     box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.container-buttons {
-    margin: auto;
-    margin-bottom: 72px;
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-studio {
+    padding-top: 0;
 }
 
 .page-header {
@@ -77,25 +91,13 @@ img {
     padding-top: 120px;
 }
 
-.card-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .card {
-
-    width: 360px;
     padding-left: 16px;
     padding-top: 32px;
     padding-bottom: 32px;
     border-right: 1px solid var(--cornflower-color);
     border-left: 1px solid var(--cornflower-color);
     border-bottom: 1px solid var(--cornflower-color);
-}
-
-.projects-container {
-    padding-top: 96px;
-    padding-bottom: 120px;
 }
 
 .project-list {
@@ -108,20 +110,12 @@ img {
 }
 
 .card-studio {
-    width: 264px;
     padding-bottom: 32px;
-    border-right: 1px solid var(--cornflower-color);
-    border-left: 1px solid var(--cornflower-color);
-    border-bottom: 1px solid var(--cornflower-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 32px;
     padding-right: 16px;
     padding-bottom: 32px;
     padding-left: 16px;
-    background-color: var(--white-color);
+    text-align: center;
 }
 
 .logo {
@@ -132,6 +126,9 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-color);
+    padding-top: 24px;
+    margin-right: 76px;
+    padding-bottom: 24px;
 }
 
 .studio {
@@ -147,7 +144,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-.navigation .header-link {
+.header-link {
     color: inherit;
 }
 
@@ -160,6 +157,9 @@ img {
 }
 
 /* main */
+.portfolio-page {
+    padding-top: 96px;
+}
 
 .contacts,
 .header-link,
@@ -170,7 +170,6 @@ img {
 
 .logo-row {
     padding-right: 76px;
-    padding-bottom: 25.5px;
 }
 
 .hero-title {
@@ -179,17 +178,16 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-color);
-    padding-top: 188px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 
 }
 
 .hero-image {
     width: auto;
-    height: 600px;
     color: var(--white-color);
     background-color: var(--navy-blue-color);
     padding-bottom: 188px;
+    padding-top: 188px;
 }
 
 .text-button {
@@ -204,6 +202,11 @@ img {
     border-radius: 4px;
     letter-spacing: 0.04em;
     line-height: 24px;
+}
+
+.text-button:hover,
+.text-button:focus {
+    background: #404BBF;
 }
 
 .button {
@@ -232,13 +235,17 @@ img {
     margin-right: 40px;
 }
 
-.items:nth-last-child(1) {
+.items-section:last-child {
     margin-right: 0;
 }
 
 .items-section {
     list-style-type: none;
     margin-right: 24px;
+    border-bottom: 1px solid var(--cornflower-color);
+    border-right: 1px solid var(--cornflower-color);
+    border-left: 1px solid var(--cornflower-color);
+    background-color: var(--white-color);
 }
 
 .items-section:nth-last-child(1) {
@@ -246,7 +253,6 @@ img {
 }
 
 .address-link {
-    text-decoration: none;
     margin-left: auto;
 }
 
@@ -305,10 +311,9 @@ img {
 
 .item {
     list-style: none;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-between;
     row-gap: 48px;
     column-gap: 24px;
 }
@@ -343,8 +348,9 @@ img {
 }
 
 .footer-background {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--navy-blue-color);
-    width: auto;
 }
 
 .footer-text {
@@ -357,7 +363,6 @@ img {
     margin-bottom: 17.5px;
 }
 
-.footer-container {
-    padding-bottom: 101.5px;
-    padding-top: 100px;
+.active {
+    color: var(--iris-color);
 }
