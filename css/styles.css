@@ -43,14 +43,14 @@ img {
 .logo-row,
 .address-link {
     text-decoration: none;
-    color: var(--headercolor);
     font-style: normal;
     padding: 24px 0 24px 0;
     padding-top: 24px;
     padding-right: 0px;
     padding-bottom: 24px;
     padding-left: 0px;
-    display: block;
+    column-gap: 40px;
+    row-gap: 40px;
 }
 
 /* header */
@@ -68,6 +68,7 @@ img {
     box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
+
 }
 
 .section {
@@ -75,32 +76,23 @@ img {
     padding-bottom: 120px;
 }
 
-.card-studio {
-    padding-top: 0;
-}
-
 .page-header {
     border-bottom: 1px solid var(--cornflower-color);
+    margin: auto;
 }
 
 .main-page {
-    padding-top: 120px;
+    padding-bottom: 0;
 }
 
 .card {
     padding-left: 16px;
     padding-top: 32px;
     padding-bottom: 32px;
-    border-right: 1px solid var(--cornflower-color);
-    border-left: 1px solid var(--cornflower-color);
-    border-bottom: 1px solid var(--cornflower-color);
 }
 
 .project-list {
     width: 264px;
-    border-right: 1px solid var(--cornflower-color);
-    border-left: 1px solid var(--cornflower-color);
-    border-bottom: 1px solid var(--cornflower-color);
     text-align: center;
     padding-bottom: 32px;
 }
@@ -111,6 +103,7 @@ img {
     padding-right: 16px;
     padding-bottom: 32px;
     padding-left: 16px;
+    border-radius: 0 0 4px 4px;
     text-align: center;
 }
 
@@ -134,16 +127,21 @@ img {
     font-size: 18px;
 }
 
-.header-link {
+.header-link .contacts {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: inherit;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    row-gap: 40px;
+    column-gap: 40px;
+
 }
 
 .header-link {
     color: inherit;
 }
-
 
 .navigation .header-link:hover,
 .navigation .header-link:focus,
@@ -226,18 +224,33 @@ img {
     background-color: var(--cloud-color);
 }
 
-.items {
+.futures-block {
+    width: 264px;
     list-style-type: none;
-    margin-right: 40px;
 }
 
-.items-section:last-child {
-    margin-right: 0;
+.futures-list {
+    column-gap: 40px;
+    row-gap: 40px;
 }
 
-.items-section {
+.items-section-projects {
     list-style-type: none;
     margin-right: 24px;
+    width: 360px;
+}
+
+.items-section-team {
+    list-style-type: none;
+    margin-right: 24px;
+    width: 264px;
+}
+
+.items-portfolio {
+    width: 360px;
+}
+
+.border-card {
     border-bottom: 1px solid var(--cornflower-color);
     border-right: 1px solid var(--cornflower-color);
     border-left: 1px solid var(--cornflower-color);
@@ -252,11 +265,20 @@ img {
     margin-left: auto;
 }
 
+.contact-links {
+    display: flex;
+    list-style: none;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
 .contacts {
     color: inherit;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .visually-hidden {
@@ -328,8 +350,9 @@ img {
 .text-content,
 .project-title {
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: var(--slate-color);
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .img-portfolio {
