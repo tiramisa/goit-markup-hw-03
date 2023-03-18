@@ -56,6 +56,8 @@ img {
 /* header */
 .container-row {
     display: flex;
+    row-gap: 24px;
+    column-gap: 24px;
 }
 
 .container-header {
@@ -230,8 +232,8 @@ img {
 }
 
 .futures-list {
-    column-gap: 40px;
-    row-gap: 40px;
+    column-gap: 24px;
+    row-gap: 24px;
 }
 
 .items-section-projects {
@@ -242,8 +244,8 @@ img {
 
 .items-section-team {
     list-style-type: none;
-    margin-right: 24px;
     width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .items-portfolio {
@@ -255,6 +257,7 @@ img {
     border-right: 1px solid var(--cornflower-color);
     border-left: 1px solid var(--cornflower-color);
     background-color: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .items-section:nth-last-child(1) {
